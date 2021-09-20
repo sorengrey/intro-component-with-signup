@@ -44,15 +44,14 @@ p {
     height: 88px;
     box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
     padding: 1em;
+    font-weight: 500;
+    width: 327px;
+    line-height: 26px;
+    letter-spacing: 0.27px;
+    font-size: 15px;
 }
 .tryit {
     font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0.27px;
-}
-.blue p {
-    font-weight: 400;
-    width: 194px;
     line-height: 26px;
     letter-spacing: 0.27px;
 }
@@ -110,4 +109,69 @@ button {
 }
 .attribution {
     display: none;
+}
+
+/* desktop view */
+@media only screen and (min-width: 1000px) {
+    body {
+        background-size: contain;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 600px 600px;
+        width: 100%;
+        justify-content: center;
+    }
+    .left {
+        grid-area: -2 / 1;
+        margin: auto;
+        width: 525px;
+    }
+    .left p {
+        text-align: left;
+        width: 525px;
+    }
+    h1 {
+        font-size: 50px;
+        width: 525px;
+        line-height: 55px;
+        text-align: left;
+    }
+    .right {
+        margin: auto;
+        width: 540px;
+    }
+    .blue {
+        width: 540px;
+        height: 60px;
+        font-weight: 500px;
+        box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    }
+    .tryit {
+        /* font-weight: 500; */
+    }
+    .blue p {
+        display: inline;
+        font-weight: 400;
+    }
+    .form {
+        width: 540px;
+        height: 474px;
+        box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    }
+    input {
+        width: 460px;
+    }
+    input:focus{
+       border: 1px solid #5E54A4;
+       border-radius: 5px;
+       outline: none;
+    }
+    button {
+        width: 460px;
+    }
+    .form p {
+        line-height: 26px;
+        width: 400px;
+    }
 }
