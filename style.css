@@ -1,8 +1,112 @@
 * {
     box-sizing: border-box;
 }
-
 html, body {
     margin: 0;
     height: 100%;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(rgba(255, 121, 121, 0.75), rgba(255, 121, 121, 0.75)),  url(./images/bg-intro-mobile.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: flex;
+    width: 100%;
+}
+main {
+    margin: auto;
+    width: 375px;
+    text-align: center;
+}
+h1, .blue, .form, p {
+    width: 327px;
+}
+h1, .blue, .blue p {
+    margin: auto;
+}
+h1 {
+    padding: 0;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.29px;
+    margin-top: 1em;
+}
+p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 1.5em auto 3em auto;
+}
+.blue {
+    margin: 4em auto auto auto;
+    background-color: #5E54A4;
+    border-radius: 10px;
+    height: 88px;
+    box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
+    padding: 1em;
+}
+.tryit {
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.27px;
+}
+.blue p {
+    font-weight: 400;
+    width: 194px;
+    line-height: 26px;
+    letter-spacing: 0.27px;
+}
+.form {
+    margin: 2em auto auto auto;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    padding: 1.4em;
+    height: 442px;
+}
+::placeholder {
+    font-weight: 600;
+    font-size: 14px;
+    color: #3D3B48;
+    line-height: 26px;
+    letter-spacing: 0.25px;
+    opacity: 0.75;
+}
+input {
+    width: 279px;
+    height: 56px;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+    border: 1px solid #DEDEDE;
+}
+button {
+    background-color: #38CC8B;
+    color: #FFFFFF;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.0908818);
+    border-radius: 5px;
+    height: 56px;
+    width: 279px;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.form p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 21px;
+    color: #BAB7D4;
+    width: 249px;
+}
+.terms {
+    font-weight: 700;
+    color: #FF7979;
+}
+.error {
+    display: none;
+    color: #FF7979;
+}
+.attribution {
+    display: none;
 }
