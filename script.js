@@ -1,4 +1,4 @@
- // fires the functions when the button is clicked
+ // fires the functions when button is clicked
 function submitForm(){
     checkFirstName();
     checkLastName();
@@ -6,7 +6,7 @@ function submitForm(){
     checkPassword();
 }
 
-// checks if the user entered a first name
+// checks if user entered a first name
 function checkFirstName(firstName) {
     var firstName = $('input[name=first]').val();
     if(firstName == false){
@@ -22,7 +22,7 @@ function checkFirstName(firstName) {
     }
 }
 
-// checks if the user entered a last name
+// checks if user entered a last name
 function checkLastName(lastName) {
     var lastName = $('input[name=last]').val();
     if(lastName == false){
@@ -38,7 +38,7 @@ function checkLastName(lastName) {
     }
 }
 
-// checks if user entry is a valid email address
+// checks if user entered valid email address
 function checkEmail(email) {
     // selects the email input field's value
     var email = $('input[name=email]').val();
@@ -58,7 +58,7 @@ function checkEmail(email) {
     }
 }
 
-// checks if the user entered a password
+// checks if user entered a password
 function checkPassword(password) {
     var password = $('input[name=password]').val();
     if(password == false){
