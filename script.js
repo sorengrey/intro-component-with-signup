@@ -5,17 +5,17 @@ function checkEmail(email) {
     var email = $('input[name=email]').val();
     // regex
     var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    // if email is not an email address...
+    // if email field is blank or not an email address...
     if(!re.test(email)){
         var emailError = document.querySelector('#emailerror');
-        // var exPoint = document.querySelector('.exclamation');
-        var input = document.querySelector('input');
+        var ex3 = document.querySelector('#ex3');
+        var emailInput = document.querySelector('#input3');
         // unhide the error message
-        emailError.style.display = "block";
+        emailError.style.visibility = "visible";
         // unhide the exclamation point
-        // exPoint.style.display = "block";
+        ex3.style.display = "block";
         // turn the border around the input field red
-        input.style.border = "2px solid #F96464";
+        emailInput.style.border = "2px solid #FF7979";
     }
 }
 

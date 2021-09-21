@@ -34,19 +34,19 @@
 
       <section class="form">
         <input type="text" placeholder="First Name" required name="first"></input>
-        <div class="exclamation">!</div>
+        <div class="exclamation" id="ex1">!</div>
         <div class="error" id="firsterror"><em>First Name cannot be empty</em></div>
 
         <input type="text" placeholder="Last Name" required></input>
-        <div class="exclamation">!</div>
+        <div class="exclamation" id="ex2">!</div>
         <div class="error" id="lasterror"><em>Last Name cannot be empty</em></div>
 
-        <input type="text" placeholder="Email Address" required name="email"></input>
-        <div class="exclamation">!</div>
+        <input type="text" placeholder="Email Address" required name="email" id="input3"></input>
+        <div class="exclamation" id="ex3">!</div>
         <div class="error" id="emailerror"><em>Looks like this is not an email</em></div>
 
         <input type="password" placeholder="Password" required name="password"></input>
-        <div class="exclamation">!</div>
+        <div class="exclamation" id="ex4">!</div>
         <div class="error" required id="passerror"><em>Password cannot be empty</em></div>
 
         <button onclick="checkEmail()">Claim your free trial</button>
