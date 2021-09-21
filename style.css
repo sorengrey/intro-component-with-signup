@@ -187,6 +187,9 @@ button {
     button {
         width: 460px;
     }
+    button:hover {
+        background-color: #77E2B3;
+    }
     .form p {
         line-height: 26px;
         width: 400px;

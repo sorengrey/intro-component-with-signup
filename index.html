@@ -33,11 +33,11 @@
      </div>
 
       <section class="form">
-        <input type="text" placeholder="First Name" required name="first"></input>
+        <input type="text" placeholder="First Name" required name="first" id="input1"></input>
         <div class="exclamation" id="ex1">!</div>
         <div class="error" id="firsterror"><em>First Name cannot be empty</em></div>
 
-        <input type="text" placeholder="Last Name" required></input>
+        <input type="text" placeholder="Last Name" required name="last" id="input2"></input>
         <div class="exclamation" id="ex2">!</div>
         <div class="error" id="lasterror"><em>Last Name cannot be empty</em></div>
 
@@ -45,11 +45,11 @@
         <div class="exclamation" id="ex3">!</div>
         <div class="error" id="emailerror"><em>Looks like this is not an email</em></div>
 
-        <input type="password" placeholder="Password" required name="password"></input>
+        <input type="password" placeholder="Password" required name="password" id="input4"></input>
         <div class="exclamation" id="ex4">!</div>
         <div class="error" required id="passerror"><em>Password cannot be empty</em></div>
 
-        <button onclick="checkEmail()">Claim your free trial</button>
+        <button onclick="submitForm()">Claim your free trial</button>
 
         <p>By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
       </section>
