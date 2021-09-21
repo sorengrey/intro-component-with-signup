@@ -7,7 +7,7 @@ html, body {
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
     background-image: linear-gradient(rgba(255, 121, 121, 0.75), rgba(255, 121, 121, 0.75)),  url(./images/bg-intro-mobile.png);
-    background-size: cover;
+    background-size: contain;
     background-blend-mode: multiply;
     display: flex;
     width: 100%;
@@ -131,13 +131,13 @@ button {
 /* desktop view */
 @media only screen and (min-width: 1000px) {
     body {
-        background-size: contain;
+        background-image: linear-gradient(rgba(255, 121, 121, 0.75), rgba(255, 121, 121, 0.8)),  url(./images/bg-intro-desktop.png);
     }
     main {
         display: grid;
         height: 100%;
         width: 100%;
-        grid-template-columns: 525px 525px;
+        grid-template-columns: 550px 600px;
         justify-content: center;
     }
     .left {
@@ -164,9 +164,7 @@ button {
         height: 60px;
         font-weight: 500px;
         box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
-    }
-    .tryit {
-        /* font-weight: 500; */
+        margin: 2.5em 0 0 0;
     }
     .blue p {
         display: inline;
@@ -177,6 +175,7 @@ button {
         height: 100%;
         box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.14688);
         padding: 2.5em 1.4em 1.4em 1.4em;
+        margin-top: 1.5em;
     }
     input {
         width: 460px;
