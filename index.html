@@ -10,8 +10,11 @@
 
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
   <!-- css stylesheet -->
   <link rel="stylesheet" href="./style.css">
@@ -30,15 +33,23 @@
      </div>
 
       <section class="form">
-        <input type="text" placeholder="First Name" required="true"></input>
-        <div class="error">First Name cannot be empty</div>
-        <input type="text" placeholder="Last Name"></input>
-        <div class="error">Last Name cannot be empty</div>
-        <input type="text" placeholder="Email Address"></input>
-        <div class="error">Looks like this is not an email</div>
-        <input type="text" placeholder="Password"></input>
-        <div class="error">Password cannot be empty</div>
-        <button>Claim your free trial</button>
+        <input type="text" placeholder="First Name" required="true" name="first"></input>
+        <div class="exclamation">!</div>
+        <div class="error" id="firsterror"><em>First Name cannot be empty</em></div>
+
+        <input type="text" placeholder="Last Name" required="true"></input>
+        <div class="exclamation">!</div>
+        <div class="error" id="lasterror"><em>Last Name cannot be empty</em></div>
+
+        <input type="text" placeholder="Email Address" required="true" name="email"></input>
+        <div class="exclamation">!</div>
+        <div class="error" id="emailerror"><em>Looks like this is not an email</em></div>
+
+        <input type="text" placeholder="Password" required="true" name="password"></input>
+        <div class="exclamation">!</div>
+        <div class="error" required="true" id="passerror"><em>Password cannot be empty</em></div>
+
+        <button onclick="checkEmail()">Claim your free trial</button>
 
         <p>By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></p>
       </section>
@@ -53,3 +64,5 @@
   </footer>
 </body>
 </html>
+
+<script src="./script.js"></script>

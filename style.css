@@ -106,6 +106,16 @@ button {
 .error {
     display: none;
     color: #FF7979;
+    text-align: left;
+}
+.exclamation {
+    display: none;
+    color: #FFFFFF;
+    background-color: #F96464;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    padding-top: 6.2px;
 }
 .attribution {
     display: none;
