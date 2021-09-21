@@ -6,7 +6,8 @@ html, body {
     height: 100%;
     color: #FFFFFF;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(rgba(255, 121, 121, 0.75), rgba(255, 121, 121, 0.75)),  url(./images/bg-intro-mobile.png);
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: #FF7979;
     background-size: contain;
     background-blend-mode: multiply;
     display: flex;
@@ -131,7 +132,9 @@ button {
 /* desktop view */
 @media only screen and (min-width: 1000px) {
     body {
-        background-image: linear-gradient(rgba(255, 121, 121, 0.75), rgba(255, 121, 121, 0.8)),  url(./images/bg-intro-desktop.png);
+        background-image: url(./images/bg-intro-desktop.png);
+        background-color: #FF7979;
+        background-blend-mode: multiply;
     }
     main {
         display: grid;
@@ -185,6 +188,9 @@ button {
        border: 1px solid #5E54A4;
        border-radius: 5px;
        outline: none;
+       color: #3D3B48;
+       font-weight: 600;
+       line-height: 26px;
     }
     button {
         width: 460px;
