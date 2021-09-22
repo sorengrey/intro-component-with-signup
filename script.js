@@ -20,6 +20,7 @@ function checkFirstName(firstName) {
         // turn the border around the input field red
         firstInput.style.border = "2px solid #FF7979";
     }
+    // if user enters a first name, revert back
     if(firstName){
         // hide the error message
         firstError.style.visibility = "hidden";
@@ -44,6 +45,7 @@ function checkLastName(lastName) {
         // turn the border around the input field red
         lastInput.style.border = "2px solid #FF7979";
     }
+    // if user enters a last name, revert back
     if(lastName){
         // hide the error message
         lastError.style.visibility = "hidden";
@@ -72,6 +74,7 @@ function checkEmail(email) {
         // turn the border around the input field red
         emailInput.style.border = "2px solid #FF7979";
     }
+    // if user enters a valid email, revert back
     if(email){
         // hide the error message
         emailError.style.visibility = "hidden";
@@ -96,6 +99,7 @@ function checkPassword(password) {
         // turn the border around the input field red
         passInput.style.border = "2px solid #FF7979";
     }
+    // if user enters a password, revert back
     if(password){
         // hide the error message
         passError.style.visibility = "hidden";
