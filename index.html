@@ -33,19 +33,19 @@
      </div>
 
       <section class="form">
-        <input type="text" placeholder="First Name" required name="first" id="input1"></input>
+        <input type="text" placeholder="First Name" required name="first" id="input1" onblur="checkFirstName()"></input>
         <div class="exclamation" id="ex1">!</div>
         <div class="error" id="firsterror"><em>First Name cannot be empty</em></div>
 
-        <input type="text" placeholder="Last Name" required name="last" id="input2"></input>
+        <input type="text" placeholder="Last Name" required name="last" id="input2" onblur="checkLastName()"></input>
         <div class="exclamation" id="ex2">!</div>
         <div class="error" id="lasterror"><em>Last Name cannot be empty</em></div>
 
-        <input type="text" placeholder="Email Address" required name="email" id="input3"></input>
+        <input type="text" placeholder="Email Address" required name="email" id="input3" onblur="checkEmail()"></input>
         <div class="exclamation" id="ex3">!</div>
         <div class="error" id="emailerror"><em>Looks like this is not an email</em></div>
 
-        <input type="password" placeholder="Password" required name="password" id="input4"></input>
+        <input type="password" placeholder="Password" required name="password" id="input4" onblur="checkPassword()"></input>
         <div class="exclamation" id="ex4">!</div>
         <div class="error" id="passerror"><em>Password cannot be empty</em></div>
 

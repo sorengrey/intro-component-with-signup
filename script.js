@@ -61,15 +61,23 @@ function checkEmail(email) {
 // checks if user entered a password
 function checkPassword(password) {
     var password = $('input[name=password]').val();
+    var passError = document.querySelector('#passerror');
+    var ex4 = document.querySelector('#ex4');
+    var passInput = document.querySelector('#input4')
     if(password == false){
-        var passError = document.querySelector('#passerror');
-        var ex4 = document.querySelector('#ex4');
-        var passInput = document.querySelector('#input4')
         // unhide the error message
         passError.style.visibility = "visible";
         // unhide the exclamation point
         ex4.style.display = "block";
         // turn the border around the input field red
         passInput.style.border = "2px solid #FF7979";
+    }
+    if(password){
+        // hide the error message
+        passError.style.visibility = "hidden";
+        // hide the exclamation point
+        ex4.style.display = "none";
+        // turn the border around the input field red
+        passInput.style.border = "1px solid #DEDEDE";
     }
 }
