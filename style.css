@@ -123,14 +123,14 @@ button {
     width: 24px;
     height: 24px;
     position: absolute;
-    margin: -3.4em 0 0 27em
+    margin: -2.9em 0 0 15em;
 }
 .attribution {
     display: none;
 }
 
 /* desktop view */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1137px) {
     body {
         background-image: url(./images/bg-intro-desktop.png);
         background-color: #FF7979;
