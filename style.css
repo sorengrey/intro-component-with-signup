@@ -15,7 +15,8 @@ html, body {
 }
 main {
     margin: auto;
-    width: 375px;
+    /* width: 375px; */
+    max-width: 700px;
     text-align: center;
 }
 h1, .blue, .form, p {
@@ -37,6 +38,7 @@ p {
     font-size: 16px;
     line-height: 26px;
     margin: 1.5em auto 3em auto;
+    max-width: 700px;
 }
 .blue {
     margin: 4em auto auto auto;
@@ -206,5 +208,8 @@ button {
         margin-right: 1.9em;
         margin-top: -1.5em;
         padding: .3em 0 .3em 0;
+    }
+    .exclamation {
+        margin: -3.6em 0 0 27em;
     }
 }
