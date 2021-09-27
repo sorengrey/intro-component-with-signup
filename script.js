@@ -75,7 +75,7 @@ function checkEmail(email) {
         emailInput.style.border = "2px solid #FF7979";
     }
     // if user enters a valid email, revert back
-    if(email){
+    if(email == true){
         // hide the error message
         emailError.style.visibility = "hidden";
         // hide the exclamation point
